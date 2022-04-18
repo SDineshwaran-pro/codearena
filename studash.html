@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Institution</title>
+    <link rel="stylesheet" href= "assets/css/mainstyle.css">
+    <link rel="stylesheet" href= "assets/css/dstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet"> 
+</head>
+<body>
+
+<section class="sub-header2">
+    <nav>
+        <a href="index.html"><img src="assets/img/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="admission.html">ADMISSION</a></li>
+                <li><a href="index.html">LOGOUT</a></li>
+                
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+
+</section><br><br><br><br><br>  
+
+<section>
+    
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxl-firebase'></i>
+                <div class="logo_name"></div>
+            </div>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <i class='bx bx-search' ></i>
+                <input type="text" placeholder="Search...">
+            </li>
+            <li>
+                <a onclick="dashFun()">
+                    <i class='bx bxs-grid-alt' ></i>
+                    <span class="links_name">Dashboards</span>
+                </a> 
+                <span class="tooltip" >Dashboards</span>
+            </li>
+            <li>
+                <a onclick="userFun()">
+                    <i class='bx bxs-user' ></i>
+                    <span class="links_name">User</span>
+                </a>
+
+                  <span class="tooltip">User</span>
+            </li>
+            <li>
+                <a onclick="msgFun()">
+                    <i class='bx bx-chat' ></i>
+                    <span class="links_name">Messages</span>
+                </a>
+
+                  <span class="tooltip">Messages</span>
+            </li>
+            <li>
+                <a onclick="recordFun()">
+                    <i class='bx bx-pie-chart-alt' ></i>
+                    <span class="links_name">Record</span>
+                </a>
+
+                  <span class="tooltip">Record</span>
+            </li>
+            <li>
+                <a onclick="fileFun()">
+                    <i class='bx bx-folder-open' ></i>
+                    <span class="links_name">File Manager</span>
+                </a>
+
+                  <span class="tooltip">File Manager</span>
+            </li>
+            <li>
+                <a onclick="saveFun()">
+                    <i class='bx bxs-heart' ></i>
+                    <span class="links_name">Saved</span>
+                </a>
+
+                  <span class="tooltip">Saved</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-cog' ></i>
+                    <span class="links_name">Settings</span>
+                </a>
+
+                  <span class="tooltip">Settings</span>
+            </li>
+        </ul>
+
+        
+    </div>
+    <div class="home-content" style="margin-top:-450px;">
+        <div class="text"> &nbsp; K.Kishore </div>
+        <img src="assets/img/user2.jpg" alt="sdfs" width="100px" height="150px" style="margin-left: 1200px; margin-top: -60px;">
+        <section>
+        <div id="dashboard">
+        <div class="set56 row" style="margin-left:60px">
+            <div class="carde col-md-3">
+                <h1>Attendance</h1>
+                <p>87.4%</p>
+            </div>
+            <div class="carde col-md-3">
+                <h1>Dept</h1>
+                <p>CSE</p>
+            </div>
+            <div class="carde col-md-3">
+                <h1>Credit Point</h1>
+                <p>375</p>
+            </div>
+            <div class="carde col-md-3">
+                <h1>Students</h1>
+                <p>Edit Profile</p>
+            </div>
+
+        </div>
+        </div>
+
+        <div id="user" >
+            <h1>User Data</h1>
+            <button onclick="uploadu2Fun()">Attend Test</button>
+            <div id="dashboard2">
+            <div class="set56 row" style="margin-left:60px">
+                <div class="carde col-md-3">
+                   <h1>Test Attended</h1>
+                   <p>45</p>
+                </div>
+                <div class="carde col-md-3">
+                    <h1 onclick="uploadFun()" style="cursor: pointer;">Upload Answer Sheet</h1>
+                </div>
+                <div class="carde col-md-3">
+                    <h1>Result Pending</h1>
+                    <p>None</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        <div id="uploadu" >
+            <h1>User Data > Upload Answer Sheet</h1>
+               <form >
+			   <div class="col-md-6">
+                    <label>
+                        Name:
+                    </label><br>
+                    <input type="text" name=""><br>
+                    <label>
+                        Exam Name:
+                    </label><br>
+                    <input type="text" name=""><br>
+                    <label>
+                        Register No:
+                    </label><br>
+                    <input type="text" name=""><br>
+					</div>
+					<div class="col-md-6">
+                    <label>
+                        Upload Sheet:
+                    </label><br>
+                    <input type="file" name=""><br>
+                    <button>Submit</button>
+					</div>
+                </form>
+       </div>
+
+       <div  id="uploadu2">
+           <h1>View Question</h1>
+           <form>
+         <button type="submit">Download</button>
+      </form>
+       </div>
+        
+        <div id="messages">
+            <h2>Messages</h2><br><br>
+            <h4>1.Principal</h4>
+            <p>Each and Every staff should assemble in the Meeting hall at.....</p>
+            <p><i>Read More</i></p><br>
+            <h4>2.Announcement</h4>
+            <p>Tomorrow each and every student's bio data should be submit.....</p>
+            <p><i>Read More</i></p>
+
+        </div>
+
+        <div id="record">
+            <h2>Records</h2>
+            <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            </div>
+            <div class="recor" id="recor">
+                <div class="row">
+                    <div class="car col-md-2">
+                        <h1>CSE</h1>
+                    </div>
+                    <div class="car col-md-2">
+                        <h1>EEE</h1>
+                    </div>
+                    <div class="car col-md-2">
+                        <h1>ECE</h1>
+                    </div>
+                    <div class="car col-md-2">
+                        <h1>Civil</h1>
+                    </div>
+                    <div class="car col-md-2">
+                        <h1>Mech</h1>
+                    </div>
+                    <div class="car col-md-2">
+                        <h1>Agri</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="file" id="file">
+            <h1>File manager</h1>
+            <h4>You do not have any Files</h4>
+        </div>
+
+        <div class="save" id="save">
+            <h1>Storage</h1>
+            <h4>You have saved nothing</h4>
+        </div>
+
+    </section>
+
+    </div>
+
+</section>
+       <!-- Footer  -->
+
+<section class="footer" style="padding-top: 10px; display: inline-block;">
+    <div class="set23" >
+    <div class="icons"><br>
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-linkedin" ></i>
+    </div>
+   <p><i class="fa fa-copyright"></i>&nbsp;Copyright @ ABC Institution</p>
+   </div>
+</section>
+
+
+</body>
+</html>
+
+<script src="assets/js/dash.js"></script>
+ <script src="assets/js/vanilla-tilt.js "></script>
+
+ <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchbtn = document.querySelector(".bx-search");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+        searchbtn.onclick = function(){
+            sidebar.classList.toggle('active');
+        }
+    </script>
+
+    <script>
+
+var x = document.getElementById("dashboard");
+var y = document.getElementById("user");
+var z = document.getElementById("uploadu");
+var a = document.getElementById("uploadu2");
+var b = document.getElementById("messages");
+var c = document.getElementById("record");
+var d = document.getElementById("file");
+var e = document.getElementById("save");
+
+
+
+x.style.display = "block"
+y.style.display = "none";
+z.style.display = "none";
+a.style.display="none";
+b.style.display="none";
+c.style.display="none"
+d.style.display="none";
+e.style.display="none";
+
+
+function dashFun(){
+x.style.display = "block"
+y.style.display = "none";
+z.style.display = "none";
+a.style.display="none";
+b.style.display="none";
+c.style.display="none";
+d.style.display="none";
+e.style.display="none";
+
+}
+
+function userFun(){
+x.style.display = "none"
+y.style.display = "block";
+z.style.display = "none";
+a.style.display="none";
+b.style.display="none";
+c.style.display="none";
+d.style.display="none";
+e.style.display="none";
+}
+
+function uploadFun(){
+x.style.display = "none"
+y.style.display = "none";
+z.style.display = "block";
+a.style.display="none";
+b.style.display="none";
+c.style.display="none";
+d.style.display="none";
+e.style.display="none";
+}
+
+function uploadu2Fun(){
+x.style.display = "none"
+y.style.display = "none";
+z.style.display = "none";
+a.style.display="block";
+b.style.display="none";
+c.style.display="none";
+d.style.display="none";
+e.style.display="none";
+}
+
+function msgFun(){
+x.style.display = "none"
+y.style.display = "none";
+z.style.display = "none";
+a.style.display="none";
+b.style.display="block";
+c.style.display="none";
+d.style.display="none";
+e.style.display="none";
+}
+
+function recordFun(){
+x.style.display = "none"
+y.style.display = "none";
+z.style.display = "none";
+a.style.display="none";
+b.style.display="none";
+c.style.display="block";
+d.style.display="none";
+e.style.display="none";
+}
+
+function fileFun(){
+x.style.display = "none"
+y.style.display = "none";
+z.style.display = "none";
+a.style.display="none";
+b.style.display="none";
+c.style.display="none";
+d.style.display="block";
+e.style.display="none";
+}
+
+function saveFun(){
+x.style.display = "none"
+y.style.display = "none";
+z.style.display = "none";
+a.style.display="none";
+b.style.display="none";
+c.style.display="none";
+d.style.display="none";
+e.style.display="block";
+}
+</script>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Institution</title>
+    <link rel="stylesheet" href= "assets/css/mainstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet"> 
+
+
+</head>
+<body class="favr">
+
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="assets/img/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="admission.html">ADMISSION</a></li>
+                <li><a href="login.html">ENGAGE</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+
+</section>  
+
+<center><h1>Registration</h1></center>
+    <div class="row" style="margin-left:300px;">
+     <div class="rform col-md-6" style="margin-left: 60px; margin-top: -25px;">
+    <form action="" method="">
+        <label>First name</label><br>
+        <input type="text" name="" value="" placeholder="First name"><br>
+        <label>Last name</label><br>
+        <input type="text" name="" value="" placeholder="Last name"> <br>
+        <label>Address</label><br>
+        <input type="text" name="" value="" placeholder="Address"><br>
+        
+        <label for="male">Male</label>&nbsp;&nbsp;&nbsp;<input type="radio" id="male" name="gender">
+        <label for="female">Female</label>&nbsp;&nbsp;&nbsp;<input type="radio" id="female" name="gender"><br>
+        <label for="course">Course</label><br>
+        <select id="course">
+            <option value="1">EEE</option>
+            <option value="2">CSE</option>
+            <option value="3">ECE</option>
+            <option value="4">Mech</option>
+            <option value="5">Agri</option>
+        </select><br><br>
+        <label for="Type">Transportation</label><br>
+        <select id="degree">
+            <option value="1">Dayscholar</option>
+            <option value="2">Hostel</option>
+            <option value="3">Outbus/Nearby</option>
+        </select> <br><br>
+        <label for="Type">Type</label><br>
+        <select id="degree">
+            <option value="1">Teacher</option>
+            <option value="2">Student</option>
+        </select> <br><br>
+        <label>Email</label><br>
+        <input type="email" name="" value="" > <br>
+        <label>Password</label><br>
+        <input type="password" name="" value="" > <br>
+        <label>Confirm password</label><br>
+        <input type="password" name="" value="" ><br>
+    </form>
+    </div>
+
+
+    <div class="rform2 col-md-6">
+    <form action="" method="">
+        <label>10th Mark</label><br>
+        <input type="text" name="" value="" placeholder="First name"><br>
+        <label>12th Mark</label><br>
+        <input type="text" name="" value="" placeholder="Last name"> <br>
+        <label>If teacher fill these too</label>
+        <label>Degree</label><br>
+        <input type="text"><br><br>
+        <label>Experience</label><br>
+        <input type="text"><br><br>
+        <label>Experience Certifiacte</label><br>
+        <input type="file" id="myFile" name="filename"><br>
+
+        <div class="set2" style="margin-left: -1000px; margin-top:500px;" >
+        <center>
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        <div class="register">Register</div>
+        <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+        </div>
+        </center>
+
+    </form>
+    </div>
+    </div>
+<!-- Footer  -->
+<section class="footer" style="margin-top: 100px;">
+    <div class="set23">
+    <div class="icons"><br>
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-linkedin" ></i>
+    </div>
+   <p><i class="fa fa-copyright"></i>&nbsp;Copyright @ ABC Institution</p>
+   </div>
+</section>
+
+</body>
+</html>
+
+<script>
+
+var x = document.getElementById("aboutus");
+var y = document.getElementById("academics");
+var z = document.getElementById("research");
+var a=document.getElementById("place");
+var b=document.getElementById("notice");
+x.style.display = "block"
+y.style.display = "none";
+z.style.display = "none";
+a.style.display="none";
+b.style.display="none";
+
+
+function aboutFun(){
+    x.style.display = "block"
+y.style.display = "none";
+z.style.display = "none";
+a.style.display="none";
+b.style.display="none";
+}
+
+function academicFun() {
+    x.style.display = "none"
+    y.style.display = "block";
+    z.style.display = "none";
+    a.style.display="none";
+    b.style.display="none";
+}
+function researchFun(){
+    x.style.display = "none";
+    z.style.display = "block";
+    y.style.display = "none";
+    a.style.display="none";
+    b.style.display="none";
+}
+function placementFun() {
+    y.style.display = "none";
+    x.style.display = "none";
+    z.style.display = "none";
+    a.style.display="block";
+    b.style.display="none";
+}
+function noticeFun() {
+    y.style.display = "none";
+    x.style.display = "none";
+    z.style.display = "none";
+    a.style.display="none";
+    b.style.display="block";
+}
+
+    </script>

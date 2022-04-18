@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href= "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <!-- Font awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"> 
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">          
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">          
+
+    <!-- Main style sheet -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!------ header section---->
+
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">ADMISSION</a></li>
+                <li><a href="blog.html">ENGAGE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+
+</section>  
+
+
+<section class="sub-header2">
+    <nav>
+        <div class="nav-links2" id="navLinks2">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="about.html">Academics</a></li>
+                <li><a href="course.html">Research</a></li>
+                <li><a href="blog.html">Placement & Trainings</a></li>
+                <li><a href="contact.html">Alumini</a></li>
+                <li><a href="index.html">Notice Board</a></li>
+                <li><a href="about.html">Career @ ABC</a></li>
+                <li><a href="course.html">Quick Links</a></li>
+                <li><a href="blog.html">Recruiters</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+
+
+</section> 
+
+
+<section>
+    <center><h1>Academics</h1></center>
+    <div class="aca row">
+        <div class="acade col-md-4">
+            <center><a href="agri.html">
+            <img src="images/agri.png" alt="3" width="150px" height="150px">
+            <p>Agriculture Engineering</p>
+            </a>
+            </center>
+        </div>
+        <div class="acade col-md-4">
+            <center><a href="agri.html">
+            <img src="images/com.png" alt="3" width="150px" height="150px">
+            <p>Computer Science & Engineering</p>
+        </a>
+        </center>
+        </div>
+        <div class="acade col-md-4">
+
+            <center><a href="agri.html">
+            <img src="images/civil.png" alt="3" width="150px" height="150px">
+            <p>Civil Engineering</p></a>
+            </center>
+        </div>
+    </div>
+    <div class="aca row">
+        <div class="acade col-md-4">
+            <center>
+            <img src="images/eee.jpg" alt="3" width="150px" height="150px">
+            <p>Electrical and Electronics Engineering</p>
+            </center>
+        </div>
+        <div class="acade col-md-4">
+            <center><a href="agri.html">
+            <img src="images/ece.jpg" alt="3" width="150px" height="150px">
+            <p>Electronics and Communication Engineering</p></a>
+            </center>
+        </div>
+        <div class="acade col-md-4">
+            <center><a href="agri.html">
+            <img src="images/mech.jpg" alt="3" width="150px" height="150px">
+            <p>Mechanical Engineering</p></a>
+            </center>
+        </div>
+    </div>
+</section>
+
+   <!-- Footer  -->
+
+<section class="footer">
+    <h4>About us</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum voluptatem, quo quam hic fugit quod ducimus <br> eligendi exercitationem fuga quae itaque omnis asperiores qui recusandae quisquam rerum iste molestias quibusdam.</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-linkedin" ></i>
+    </div>
+   <p>Made by Showrav Mitra </p>
+</section>
+
+
+
+<!-------------(header section) javascript for toggle menu---->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right = "0";
+    }
+    function hidemenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+ 
+
+</body>
+</html>
+
+<style>
+    .aca{
+        margin-left:-10px;
+    }
+</style>

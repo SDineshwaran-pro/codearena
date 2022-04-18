@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Institution</title>
+    <link rel="stylesheet" href= "assets/css/mainstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">   
+
+</head>
+<body class="han">
+
+<div>
+<section class="def" id="def1">
+<div class="loginpg">
+    <div class="img1">
+    <img src="assets/img/circle.png" alt="sdt">
+     </div>
+     <div class="img2">
+    <img src="assets/img/login.gif" alt="logni">
+    </div>
+    <div class="set56">
+    <div class="conti">
+    <p>Login as</p>
+    <h3 class="stu1" onclick="teacherFun()">Teacher</h3>
+    <h3 class="stu2" onclick="studentFun()">Student</h3> 
+    </div><br><br><br><br><br>  
+    <h1>Teachers's Login</h1>
+    <label>Username</label><br>
+    <input type="text" name="username"><br><br>
+    <label>Password</label><br>
+    <input type="text" name="username"><br><br><br>
+    <button><a href="dashboard.html">Login</button>
+    <p>Not registered Yet &nbsp;<i><a href="register.html" >Register Here</a></i> </p>
+    <p style="color: black; background-color:white;"><strong><i>*Click LOGIN BUTTON respectively for dashboard</i></strong></p>
+
+    </div>
+</div>
+</section>
+
+<section class="def" id="def2">
+<div class="loginpg">
+    <div class="img3">
+    <img src="assets/img/circle.png" alt="sdt">
+    </div>
+    <div class="img4">
+    <img src="assets/img/stu.gif" alt="logni">
+    </div>
+    <div class="set57">
+    <div class="conti2">
+    <p>Login as</p>
+    <h3 class="stu3" onclick="teacherFun()">Teacher</h3>
+    <h3 class="stu4" onclick="studentFun()">Student</h3>
+    </div><br><br><br><br><br>
+    <h1>Students's Login</h1>
+    <label>Username</label><br>
+    <input type="text" name="username"><br><br>
+    <label>Password</label><br>
+    <input type="text" name="username"><br><br><br>
+    <button><a href="studash.html">Login</button>
+    <p>Not registered Yet &nbsp;<i><a href="register.html" >Register Here</a></i></p>
+</div>
+</div>
+</section>
+</div>
+
+</body>
+</html>
+
+<script>
+var x = document.getElementById("def1");
+var y = document.getElementById("def2");
+x.style.display="block";
+y.style.display="none";
+function teacherFun(){
+    x.style.display="block";
+    y.style.display="none";
+}
+
+function studentFun(){
+    x.style.display="none";
+    y.style.display="block";
+}
+
+
+</script>
